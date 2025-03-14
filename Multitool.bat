@@ -5,6 +5,7 @@ title MULTI TOOL
 
 :: Password System
 :passwordPrompt
+call USRPW.cmd
 cls
 echo.
 echo.
@@ -15,7 +16,8 @@ echo.
 echo [1m[38;5;202mEnter the password to continue:
 set /p password=Password: 
 
-if "%password%"=="$1234$" goto mainMenu
+::to be honest I am not sure this will work -AgentRed, 12:16 14.3.2025
+if "%password%"==%USRPW% goto mainMenu
 
 echo [1m[38;5;196mIncorrect password. Access denied.
 pause
