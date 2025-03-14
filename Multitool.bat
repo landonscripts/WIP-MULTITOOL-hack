@@ -70,26 +70,17 @@ echo [1m[38;5;196m        [11] Next Page
 echo.
 echo [1m[38;5;202m        [0] Exit
 echo.
-set /p choice=Select an option: 
+set /p choice=Select an option:
 
-if %choice%==1 goto vmware
-if %choice%==2 goto iplogger
-if %choice%==3 goto phonespoofer
-if %choice%==4 goto wifibruteforce
-if %choice%==5 goto ddos
-if %choice%==6 goto emailspammer
-if %choice%==7 goto best
-if %choice%==8 goto xhell
-if %choice%==9 goto schooismulti
-if %choice%==10 goto vpnig
-if %choice%==11 goto nextpage
+goto %choice%
 if %choice%==0 exit
 
 echo [1m[38;5;196mInvalid choice, please try again.
 pause
 goto menu
 
-:vmware
+:1
+::vmware
 cls
 echo [1m[38;5;196mOpening VMware...
 start "" "C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe"
@@ -101,7 +92,8 @@ if %errorlevel%==0 (
 pause
 goto menu
 
-:iplogger
+:2
+::iplogger
 cls
 echo [1m[38;5;196mOpening IPLogger in your default browser...
 start "" "https://iplogger.org/"
@@ -113,7 +105,8 @@ if %errorlevel%==0 (
 pause
 goto menu
 
-:phonespoofer
+:3
+::phonespoofer
 cls
 echo [1m[38;5;196mOpening Phone Spoofer in your default browser...
 start "" "https://mobile.spooftel.com/freecall/index.php"
@@ -125,7 +118,8 @@ if %errorlevel%==0 (
 pause
 goto menu
 
-:wifibruteforce
+:4
+::wifibruteforce
 cls
 echo [1m[38;5;196mDownloading and running Wi-Fi Bruteforce script...
 echo.
@@ -145,7 +139,8 @@ if exist "bruteforce.bat" (
 pause
 goto menu
 
-:ddos
+:5
+::ddos
 cls
 echo [1m[38;5;196mDownloading and running DDOS multi-tool script...
 echo.
@@ -165,7 +160,8 @@ if exist "ddos-tool.bat" (
 pause
 goto menu
 
-:emailspammer
+:6
+::emailspammer
 cls
 echo [1m[38;5;196mDownloading and running Email Spammer tool...
 echo.
@@ -193,7 +189,8 @@ if exist "gmail-spammer.zip" (
 pause
 goto menu
 
-:best
+:7
+::best
 cls
 echo [1m[38;5;196mDownloading and setting up the BEST tool...
 echo.
@@ -235,7 +232,8 @@ if exist "best-tool.zip" (
 pause
 goto menu
 
-:xhell
+:8
+::xhell
 cls
 echo [1m[38;5;196mDownloading and setting up X-Hell...
 echo.
@@ -269,7 +267,8 @@ if exist "xhell.zip" (
 pause
 goto menu
 
-:schooismulti
+:9
+::schooismulti
 cls
 echo [1m[38;5;196mDownloading and setting up Schoois Multi Tool...
 echo.
@@ -297,7 +296,8 @@ if exist "SchooisMultitool_v2.2.zip" (
 pause
 goto menu
 
-:vpnig
+:10
+::vpnig
 cls
 echo [1m[38;5;196mDownloading and setting up VPN IG...
 echo.
@@ -332,7 +332,8 @@ if exist "cypher-mini.rar" (
 pause
 goto menu
 
-:nextpage
+:11
+::nextpage
 cls
 :: Display only the title
 call :showTitle
