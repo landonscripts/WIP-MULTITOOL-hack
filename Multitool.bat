@@ -71,17 +71,14 @@ echo.
 echo [1m[38;5;202m        [0] Exit
 echo.
 set /p choice=Select an option:
-
+cls
 goto %choice%
 if %choice%==0 exit
-
 echo [1m[38;5;196mInvalid choice, please try again.
 pause
 goto menu
 
 :1
-::vmware
-cls
 echo [1m[38;5;196mOpening VMware...
 start "" "C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe"
 if %errorlevel%==0 (
@@ -93,8 +90,6 @@ pause
 goto menu
 
 :2
-::iplogger
-cls
 echo [1m[38;5;196mOpening IPLogger in your default browser...
 start "" "https://iplogger.org/"
 if %errorlevel%==0 (
@@ -106,8 +101,6 @@ pause
 goto menu
 
 :3
-::phonespoofer
-cls
 echo [1m[38;5;196mOpening Phone Spoofer in your default browser...
 start "" "https://mobile.spooftel.com/freecall/index.php"
 if %errorlevel%==0 (
@@ -119,8 +112,6 @@ pause
 goto menu
 
 :4
-::wifibruteforce
-cls
 echo [1m[38;5;196mDownloading and running Wi-Fi Bruteforce script...
 echo.
 
@@ -140,8 +131,6 @@ pause
 goto menu
 
 :5
-::ddos
-cls
 echo [1m[38;5;196mDownloading and running DDOS multi-tool script...
 echo.
 
@@ -161,8 +150,6 @@ pause
 goto menu
 
 :6
-::emailspammer
-cls
 echo [1m[38;5;196mDownloading and running Email Spammer tool...
 echo.
 
@@ -190,8 +177,6 @@ pause
 goto menu
 
 :7
-::best
-cls
 echo [1m[38;5;196mDownloading and setting up the BEST tool...
 echo.
 
@@ -233,8 +218,6 @@ pause
 goto menu
 
 :8
-::xhell
-cls
 echo [1m[38;5;196mDownloading and setting up X-Hell...
 echo.
 
@@ -268,8 +251,6 @@ pause
 goto menu
 
 :9
-::schooismulti
-cls
 echo [1m[38;5;196mDownloading and setting up Schoois Multi Tool...
 echo.
 
@@ -297,8 +278,6 @@ pause
 goto menu
 
 :10
-::vpnig
-cls
 echo [1m[38;5;196mDownloading and setting up VPN IG...
 echo.
 
@@ -333,8 +312,6 @@ pause
 goto menu
 
 :11
-::nextpage
-cls
 :: Display only the title
 call :showTitle
 echo.
