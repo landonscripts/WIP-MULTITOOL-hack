@@ -326,16 +326,13 @@ echo.
 set /p choice=Select an option: 
 
 if %choice%==12 goto menu
-if %choice%==13 goto ipchanger
-if %choice%==14 goto plutohacking
-if %choice%==15 goto passwordbf
-if %choice%==16 goto passwordgen
-if %choice%==17 goto wifipinger
+goto %choice%
 echo [1m[38;5;196mInvalid choice, please try again.
 pause
 goto nextpage
 
-:ipchanger
+:13
+::ipchanger
 cls
 echo [1m[38;5;196mDownloading and running IP Changer...
 echo.
@@ -355,7 +352,8 @@ if exist "change_ip_config.bat" (
 pause
 goto nextpage
 
-:plutohacking
+:14
+::plutohacking
 cls
 echo [1m[38;5;196mDownloading and setting up Pluto Hacking Tool...
 echo.
@@ -383,7 +381,8 @@ if exist "Pluto-Multitool.zip" (
 pause
 goto nextpage
 
-:passwordbf
+:15
+::passwordbf
 cls
 echo [1m[38;5;196mDownloading and running Your Password Ain't Safe (BF)...
 echo.
@@ -415,7 +414,8 @@ if exist "bruteforcer.js" (
 pause
 goto nextpage
 
-:passwordgen
+:16
+::passwordgen
 cls
 echo [1m[38;5;196mPassword Generator
 echo [1m[38;5;202m================
@@ -446,7 +446,8 @@ echo.
 pause
 goto nextpage
 
-:wifipinger
+:17
+::wifipinger
 cls
 echo [1m[38;5;196mWi-Fi Pinger
 echo [1m[38;5;202m============
