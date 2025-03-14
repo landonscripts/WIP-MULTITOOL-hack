@@ -324,7 +324,7 @@ echo [1m[38;5;196m        [16] Password Generator
 echo [1m[38;5;202m        [17] Wi-Fi Pinger
 echo.
 set /p choice=Select an option: 
-
+cls
 if %choice%==12 goto menu
 goto %choice%
 echo [1m[38;5;196mInvalid choice, please try again.
@@ -332,8 +332,6 @@ pause
 goto nextpage
 
 :13
-::ipchanger
-cls
 echo [1m[38;5;196mDownloading and running IP Changer...
 echo.
 
@@ -353,8 +351,6 @@ pause
 goto nextpage
 
 :14
-::plutohacking
-cls
 echo [1m[38;5;196mDownloading and setting up Pluto Hacking Tool...
 echo.
 
@@ -382,8 +378,6 @@ pause
 goto nextpage
 
 :15
-::passwordbf
-cls
 echo [1m[38;5;196mDownloading and running Your Password Ain't Safe (BF)...
 echo.
 
@@ -415,8 +409,6 @@ pause
 goto nextpage
 
 :16
-::passwordgen
-cls
 echo [1m[38;5;196mPassword Generator
 echo [1m[38;5;202m================
 echo.
@@ -447,8 +439,6 @@ pause
 goto nextpage
 
 :17
-::wifipinger
-cls
 echo [1m[38;5;196mWi-Fi Pinger
 echo [1m[38;5;202m============
 echo.
