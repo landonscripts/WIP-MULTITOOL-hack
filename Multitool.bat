@@ -1,14 +1,4 @@
-@echo off
-color 0a
-mode con: cols=80 lines=25
-title MULTI TOOL
-
-:: Password System
-:passwordPrompt
-cls
-echo.
-echo.
-echo [1m[38;5;196m==================================================
+=
 echo [1m[38;5;202m          By Landon-ED - ONLY USE AT YOUR OWN RISK
 echo [1m[38;5;196m==================================================
 echo.
